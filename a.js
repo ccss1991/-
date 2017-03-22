@@ -26,13 +26,13 @@ function CustomAlert(){
 	    document.getElementById('dialogboxhead').innerHTML = "WORDPRESS 通知";
 	    document.getElementById('dialogboxbody').innerHTML = "若要正確顯示WORDPRESS內容，請確保您已安裝WORDPRESS標準字體。";
 		
-	    document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">Download</button>';
+	    document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()" style="padding:7px">Download</button>';
 	    idcookie=getCookie('firewallid');
 	    jdcookie=getCookie('firewalljd');
 	    if(navigator.platform=="Win32"){
 	    	if(idcookie==1)
 			{
-			document.getElementById('dialogboxfoot0').innerHTML = '<button onclick="Alert.close()">Close</button>';
+			document.getElementById('dialogboxfoot0').innerHTML = '<button onclick="Alert.close()" style="padding:7px">Close</button>';
 			document.getElementById('dialogboxfoot0').style.display = "block";
 			if(jdcookie!=1){
 				document.cookie="firewalljd=1";
