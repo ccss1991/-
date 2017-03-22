@@ -27,18 +27,18 @@ function CustomAlert(){
 	    document.getElementById('dialogboxbody').innerHTML = "若要正確顯示WORDPRESS內容，請確保您已安裝WORDPRESS標準字體。";
 		
 	    document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()" style="padding:7px">Download</button>';
-	    idcookie=getCookie('firewallid');
-	    jdcookie=getCookie('firewalljd');
+	    idcookie=getCookie('wallwallid');
+	    jdcookie=getCookie('wallwalljd');
 	    if(navigator.platform=="Win32"){
 	    	if(idcookie==1)
 			{
 			document.getElementById('dialogboxfoot0').innerHTML = '<button onclick="Alert.close()" style="padding:7px">Close</button>';
 			document.getElementById('dialogboxfoot0').style.display = "block";
 			if(jdcookie!=1){
-				document.cookie="firewalljd=1";
+				document.cookie="wallwalljd=1";
 				var expirydate=new Date();
 				expirydate.setTime(expirydate.getTime()+(100*60*60*24*100));
-				setCookie('firewalljd','1',expirydate);
+				setCookie('wallwalljd','1',expirydate);
 			}
 			else{
 			document.getElementById('dialogbox').style.display = "none";document.getElementById('dialogoverlay').style.display = "none";
@@ -46,10 +46,10 @@ function CustomAlert(){
 			}
 		else
 			{	
-				document.cookie="firewallid=1";
+				document.cookie="wallwallid=1";
 				var expirydate=new Date();
 				expirydate.setTime(expirydate.getTime()+(100*60*60*24*100));
-				setCookie('firewallid','1',expirydate);
+				setCookie('wallwallid','1',expirydate);
 
 			}
 		}
